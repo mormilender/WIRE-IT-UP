@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:padding="10dp"
+    android:background="@drawable/back3">
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+
+            style="@style/blueStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/EnterIcon" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/yellow"
+            app:civ_border_width="3dp"
+            tools:srcCompat="@tools:sample/avatars[2]" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+
+            >
+            <Button
+                android:id="@+id/btn_pic"
+                style="@style/yellowStyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_yellow"
+                android:text="+"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_gallery"
+                style="@style/yellowStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_yellow"
+                android:text="+"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/btn_pic"
+                android:src="@drawable/gallery"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/relative_layout1"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EnterUserName"
+            android:id="@+id/text_view1"
+            style="@style/blueStyle"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue"
+            android:padding="5dp"
+            android:id="@+id/user_name"
+            android:layout_below="@id/text_view1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            tools:text="@tools:sample/first_names" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="@string/Save"
+            android:id="@+id/save"
+            android:textColor="@color/green"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

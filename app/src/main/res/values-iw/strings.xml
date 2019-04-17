@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wire It Up</string>
+    <string name="EnterIcon">בחר תמונה :</string>
+    <string name="EnterUserName">הכנס שם משתמש :</string>
+    <string name="Save">שמור</string>
+    <string name="Scoretable">טבלת ניקוד</string>
+    <string name="name">שם</string>
+    <string name="score">ניקוד</string>
+    <string name="newp">שחקן חדש</string>
+    <string name="ex_play">" שחקן קיים"</string>
+    <string name="u_ex">כבר קיים כזה שם משתמש</string>
+    <string name="no_name">אנא הזן שם משתמש</string>
+    <string name="no_play">אנא בחר שחקן</string>
+    <string name="chose_play">בחר שחקן:</string>
+    <string name="step_num">מס\' צעדים:</string>
+    <string name="level">"שלב"</string>
+    <string name="level1">שלב 1</string>
+    <string name="level2">שלב 2</string>
+    <string name="level3">שלב 3</string>
+    <string name="level4">שלב 4</string>
+    <string name="level5">שלב 5</string>
+    <string name="level6">שלב 6</string>
+    <string name="level7">שלב 7</string>
+    <string name="level8">שלב 8</string>
+    <string name="level9">שלב 9</string>
+    <string name="restart">האם ברצונך להתחיל מחדש את השלב או לחזור אחורה?</string>
+    <string name="outoftime">הזמן נגמר!</string>
+    <string name="row">שורה</string>
+    <string name="col">עמודה</string>
+    <string name="shape">צורה</string>
+    <string name="cong">יפה מאוד!</string>
+    <string name="next">השלמת את השלב בהצלחה</string>
+    <string name="play">שחק</string>
+    <string name="yourscore">הניקוד שלך הוא:</string>
+    <string name="theplayer">"השחקן שנבחר: "</string>
+    <string name="fin">סיימת את כל השלבים</string>
+    <string name="did">עשית את זה!</string>
+</resources>

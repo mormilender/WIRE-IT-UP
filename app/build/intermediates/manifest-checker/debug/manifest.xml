@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.win10user.project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.win10user.project.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.win10user.project.Score_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.explay_act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.LevelsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.NewPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level1_Activity"
+            android:label="@string/level1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level2_Activity"
+            android:label="@string/level2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level3_Activity"
+            android:label="@string/level3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level4_Activity"
+            android:label="@string/level4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level5_Activity"
+            android:label="@string/level5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level6_Activity"
+            android:label="@string/level6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level7_Activity"
+            android:label="@string/level7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level8_Activity"
+            android:label="@string/level8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.win10user.project.Level9_Activity"
+            android:label="@string/level9"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.win10user.project.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.win10user.project.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

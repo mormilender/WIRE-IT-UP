@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#"
+            style="@style/greenStyle"
+            android:padding="5dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+            android:layout_margin="10dp"
+            android:id="@+id/number"
+            android:background="@drawable/tablegreen"
+
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user"
+            android:id="@+id/image_player"
+            android:padding="3dp"
+            android:layout_margin="10dp"
+            app:civ_border_color="@color/blue"
+            app:civ_border_width="3dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_player"
+            android:text="player"
+            style="@style/blueStyle"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score"
+            style="@style/blueStyle"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/score_player"
+
+            />
+    </LinearLayout>
+</HorizontalScrollView>
+

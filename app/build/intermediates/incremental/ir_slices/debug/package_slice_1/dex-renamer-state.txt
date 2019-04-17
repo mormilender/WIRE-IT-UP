@@ -1,0 +1,4 @@
+#Sun Feb 24 14:50:42 IST 2019
+base.0=C\:\\Users\\Win10 User\\Desktop\\final project-20190223T121416Z-001\\Wire it up\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.0=classes.dex
+renamed.0=classes.dex

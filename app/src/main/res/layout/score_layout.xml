@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/back3"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/relative_layout"
+        >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Scoretable"
+        style="@style/blueStyle"
+        android:gravity="center_horizontal"
+        android:textSize="35sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout1"
+        android:layout_below="@id/relative_layout"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/greenStyle"
+            android:text="#"
+          android:layout_marginStart="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:layout_marginStart="120dp"
+            style="@style/greenStyle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            style="@style/greenStyle"
+            android:layout_marginStart="60dp"/>
+
+
+
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linear_layout1"
+    android:id="@+id/list_player_layout"
+    >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/score_list"
+        android:background="@drawable/border_blue"
+        android:padding="10dp"
+        >
+
+
+
+    </ListView>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

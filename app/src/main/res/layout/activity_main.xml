@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/back3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:id="@+id/user_lay"
+            android:layout_below="@+id/exit">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/yellow"
+                app:civ_border_width="3dp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pick"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/user_lay"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue"
+            android:text="@string/chose_play"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/newp"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/new_play"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_yellow"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_play"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_yellow"
+            android:text="@string/ex_play"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:padding="10dp"
+            android:id="@+id/ex_play"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_green"
+            android:text="@string/play"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:id="@+id/play"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
